@@ -16,15 +16,8 @@ const config: StorybookConfig = {
    async viteFinal(config) {
       config.plugins = config.plugins || [];
       config.plugins.push(svgr());
-      return mergeConfig(config, {
-         //  css: {
-         //     preprocessorOptions: {
-         //        scss: {
-         //           additionalData: `@use "@/styles/abstracts" as *;`,
-         //        },
-         //     },
-         //  },
-      });
+      config.base = '/storybook-react/';
+      return mergeConfig(config, {});
    },
 };
 export default config;

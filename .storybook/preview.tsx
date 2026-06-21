@@ -8,6 +8,9 @@ import '../src/styles/main.scss';
 
 initialize({
    onUnhandledRequest: 'bypass', // ← This is the key
+   serviceWorker: {
+      url: '/storybook-react/mockServiceWorker.js',
+   },
 }); // starts the service worker
 
 const preview: Preview = {
