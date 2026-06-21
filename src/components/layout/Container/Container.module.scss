@@ -1,0 +1,23 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Container */
+.container {
+   margin: 0 auto;
+   padding-inline: var(--space-2, 1rem);
+   width: 100%;
+
+   &:not(.fluid) {
+      @include respond-from('sm') {
+         max-width: var(--breakpoint-sm);
+      }
+      @include respond-from('md') {
+         max-width: var(--breakpoint-md);
+      }
+      @include respond-from('lg') {
+         max-width: var(--breakpoint-lg);
+      }
+      @include respond-from('xl') {
+         max-width: var(--breakpoint-xl);
+      }
+   }
+}

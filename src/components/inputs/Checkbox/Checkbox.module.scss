@@ -1,0 +1,83 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Checkbox */
+.checkbox {
+   --radio-control-size: 1.25rem;
+   --radio-font-size: var(--font-size-md);
+
+   display: inline-flex;
+   align-items: center;
+   gap: 1em;
+   cursor: pointer;
+   user-select: none;
+   color: var(--color-text-primary);
+   transition: opacity var(--motion-normal);
+   font-size: var(--radio-font-size);
+
+   //  Sizes
+   &.sm {
+      --radio-control-size: 1rem;
+      --radio-font-size: var(--font-size-sm);
+   }
+   &.md {
+      --radio-control-size: 1.25rem;
+      --radio-font-size: var(--font-size-md);
+   }
+   &.lg {
+      --radio-control-size: 1.5rem;
+      --radio-font-size: var(--font-size-lg);
+   }
+
+   //  States
+   &.disabled {
+      cursor: not-allowed;
+      opacity: var(--opacity-disabled, 0.6);
+   }
+}
+
+/* Hidden Input */
+.input {
+   position: absolute;
+   opacity: 0;
+   width: 0;
+   height: 0;
+
+   // Focus styles
+   &:focus-visible + .control {
+      outline: 2px solid var(--color-primary);
+   }
+}
+
+/* Custom Checkbox */
+.control {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: var(--radio-control-size);
+   height: var(--radio-control-size);
+   background: var(--color-surface);
+   border: var(--control-border);
+   border-radius: var(--radius-sm);
+   transition: all var(--motion-fast);
+
+   &::after {
+      content: '';
+      width: 0.35em;
+      height: 0.65em;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: translateY(-10%) rotate(45deg) scale(0);
+      transition: transform var(--motion-fast) ease-in;
+   }
+
+   //  Checked State
+   .input:checked + & {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+
+      &::after {
+         transform: translateY(-10%) rotate(45deg) scale(1);
+      }
+   }
+}

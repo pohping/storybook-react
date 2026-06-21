@@ -1,0 +1,156 @@
+{
+   "data": [
+      {
+         "type": "banner",
+         "id": "banner-1",
+         "attributes": {
+            "title": "Summer Strings & Rhythm Sale",
+            "description": "Get up to 30% off on premium electric guitars, drums, and live sound gear.",
+            "url": "https://store.example.com/summer-sale",
+            "displayOrder": 1,
+            "isActive": true,
+            "startDate": "2025-07-01T00:00:00Z",
+            "endDate": "2025-08-31T23:59:59Z",
+            "createdAt": "2025-06-25T10:00:00Z",
+            "updatedAt": "2025-06-26T12:00:00Z"
+         },
+         "relationships": {
+            "image": {
+               "data": { "type": "image", "id": "img-101" }
+            }
+         }
+      },
+      {
+         "type": "banner",
+         "id": "banner-2",
+         "attributes": {
+            "title": "New Vintage Reissue Synth Series",
+            "description": "Introducing the latest analog synthesizers and MIDI controllers for modern producers.",
+            "url": "https://store.example.com/vintage-synths",
+            "displayOrder": 2,
+            "isActive": true,
+            "startDate": "2025-07-15T00:00:00Z",
+            "endDate": "2025-09-15T23:59:59Z",
+            "createdAt": "2025-07-01T08:00:00Z",
+            "updatedAt": "2025-07-01T08:00:00Z"
+         },
+         "relationships": {
+            "image": {
+               "data": { "type": "image", "id": "img-102" }
+            }
+         }
+      },
+      {
+         "type": "banner",
+         "id": "banner-3",
+         "attributes": {
+            "title": "Back to School Music Deals",
+            "description": "Top picks for student musicians, from student violins to starter keyboard kits.",
+            "url": "https://store.example.com/back-to-school",
+            "displayOrder": 3,
+            "isActive": false,
+            "startDate": "2025-06-01T00:00:00Z",
+            "endDate": "2025-07-01T00:00:00Z",
+            "createdAt": "2025-05-20T10:00:00Z",
+            "updatedAt": "2025-06-01T00:00:00Z"
+         },
+         "relationships": {
+            "image": {
+               "data": { "type": "image", "id": "img-103" }
+            }
+         }
+      },
+      {
+         "type": "banner",
+         "id": "banner-4",
+         "attributes": {
+            "title": "Studio Recording Essentials",
+            "description": "Crystal clear microphones and audio interfaces for your home studio builds.",
+            "url": "https://store.example.com/studio-essentials",
+            "displayOrder": 4,
+            "isActive": true,
+            "startDate": "2025-07-20T00:00:00Z",
+            "endDate": "2025-09-01T00:00:00Z",
+            "createdAt": "2025-07-18T15:00:00Z",
+            "updatedAt": "2025-07-19T09:00:00Z"
+         },
+         "relationships": {
+            "image": {
+               "data": { "type": "image", "id": "img-104" }
+            }
+         }
+      },
+      {
+         "type": "banner",
+         "id": "banner-5",
+         "attributes": {
+            "title": "Grand & Digital Pianos Mega Sale",
+            "description": "Experience ultra HD sound and weighted keys with top-rated 88-key displays.",
+            "url": "https://store.example.com/digital-pianos",
+            "displayOrder": 5,
+            "isActive": true,
+            "startDate": "2025-08-01T00:00:00Z",
+            "endDate": "2025-09-30T00:00:00Z",
+            "createdAt": "2025-07-20T14:00:00Z",
+            "updatedAt": "2025-07-21T16:00:00Z"
+         },
+         "relationships": {
+            "image": {
+               "data": { "type": "image", "id": "img-105" }
+            }
+         }
+      }
+   ],
+   "included": [
+      {
+         "type": "image",
+         "id": "img-101",
+         "attributes": {
+            "url": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=1631&auto=format&fit=crop",
+            "alt": "Summer Strings & Rhythm Sale",
+            "createdAt": "2025-06-25T09:00:00Z",
+            "updatedAt": "2025-06-26T11:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-102",
+         "attributes": {
+            "url": "https://images.unsplash.com/photo-1641994245114-0a1405a63e77?q=80&w=1470&auto=format&fit=crop",
+            "alt": "New Vintage Reissue Synth Series",
+            "createdAt": "2025-07-01T07:30:00Z",
+            "updatedAt": "2025-07-01T07:30:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-103",
+         "attributes": {
+            "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1470&auto=format&fit=crop",
+            "alt": "Back to School Music Deals",
+            "createdAt": "2025-05-20T09:30:00Z",
+            "updatedAt": "2025-06-01T00:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-104",
+         "attributes": {
+            "url": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1074&auto=format&fit=crop",
+            "alt": "Studio Recording Essentials",
+            "createdAt": "2025-07-18T14:50:00Z",
+            "updatedAt": "2025-07-19T08:45:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-105",
+         "attributes": {
+            "url": "https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=1470&auto=format&fit=crop",
+            "alt": "Grand & Digital Pianos Mega Sale",
+            "createdAt": "2025-07-20T13:45:00Z",
+            "updatedAt": "2025-07-21T15:30:00Z"
+         }
+      }
+   ]
+}

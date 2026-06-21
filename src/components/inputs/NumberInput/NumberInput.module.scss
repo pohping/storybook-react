@@ -1,0 +1,122 @@
+@use '@/styles/abstracts' as *;
+
+/* Root NumberInput */
+.numberInput {
+   --input-size: var(--control-height-md);
+   --input-padding-x: calc(var(--input-size, var(--control-height-md)) / 3);
+   --input-right-section-size: calc(
+      var(--input-size, var(--control-height-md)) - calc(
+            var(--border-width) * 2
+         )
+   );
+   --input-border: var(--control-border-width) solid
+      var(--input-border-color, var(--control-border-color));
+
+   position: relative;
+   display: inline-flex;
+
+   font-size: var(--input-font-size, var(--font-size-md));
+   font-family: var(--font-family-sans);
+   line-height: var(--input-size);
+
+   overflow: hidden;
+   height: var(--input-size);
+   background: var(--control-background);
+
+   border-radius: var(--control-radius);
+   border: var(--input-border);
+
+   //  States
+   &:hover:not(.disabled, .error),
+   &:focus-within {
+      --input-border-color: var(--color-primary);
+   }
+
+   &.error {
+      --input-border-color: var(--color-error);
+      --input-color: var(--color-error);
+      --input-placeholder: var(--color-error);
+   }
+
+   &.disabled {
+      cursor: not-allowed;
+      background: var(--control-background-disabled);
+      --input-border-color: var(--control-border-disabled);
+   }
+
+   //  Sizes
+   &.sm {
+      --input-size: var(--control-height-sm);
+      --input-font-size: var(--font-size-sm);
+   }
+
+   &.md {
+      --input-size: var(--control-height-md);
+      --input-font-size: var(--font-size-md);
+   }
+
+   &.lg {
+      --input-size: var(--control-height-lg);
+      --input-font-size: var(--font-size-lg);
+   }
+}
+
+/* Number Input */
+.input {
+   all: unset;
+   width: 100%;
+   padding-inline: var(--input-padding-x);
+   color: var(--input-color, var(--color-text));
+   transition: border-color var(--motion-fast) ease;
+
+   &::placeholder {
+      color: var(--input-placeholder, var(--control-placeholder));
+   }
+   // Hide default browser spinners
+   &::-webkit-outer-spin-button,
+   &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+   }
+}
+
+/* Action Section */
+.section {
+   flex-shrink: 0;
+   height: 100%;
+   width: var(--input-right-section-size);
+   display: flex;
+   flex-direction: column;
+   border-left: var(--input-border);
+}
+
+/* Control */
+.control {
+   all: unset;
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   color: var(--text-muted);
+   transition:
+      background var(--motion-fast),
+      color var(--motion-fast);
+   font-size: 0.5em;
+
+   // Add a tiny divider between up and down arrows
+   &:first-child {
+      border-bottom: var(--input-border);
+   }
+
+   // States
+   &:hover:not(:disabled) {
+      background: var(--color-gray-100);
+      color: var(--color-text);
+   }
+
+   &:disabled {
+      cursor: not-allowed;
+      color: var(--color-gray-300);
+   }
+}

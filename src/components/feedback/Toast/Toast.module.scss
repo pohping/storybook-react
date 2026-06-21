@@ -1,0 +1,49 @@
+@use '@/styles/base' as *;
+
+/* Root Toast */
+.toast {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.6rem 1rem;
+   gap: var(--space-4);
+   min-width: 28rem;
+   box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.08));
+   background: var(---color-bg-surface);
+   border-radius: var(--radius-sm);
+   border-left: 4px solid var(--toast-indicator-color, var(--color-success));
+   will-change: transform, opacity;
+}
+
+/* Inner Content */
+.message {
+   display: flex;
+   align-items: center;
+   gap: var(--space-2);
+   font-size: var(--control-font-size, 0.925rem);
+   color: var(--color-text-main);
+}
+
+.indicator {
+   color: var(--toast-indicator-color, var(--color-success));
+   display: inline-flex;
+   align-items: center;
+   font-size: 1.25rem;
+}
+
+/* Variants */
+.error {
+   --toast-indicator-color: var(--color-error);
+}
+
+.info {
+   --toast-indicator-color: var(--color-info);
+}
+
+.success {
+   --toast-indicator-color: var(--color-success);
+}
+
+.warning {
+   --toast-indicator-color: var(--color-warning);
+}

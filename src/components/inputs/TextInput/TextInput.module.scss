@@ -1,0 +1,60 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Input */
+.input {
+   outline: none;
+   display: block;
+   flex: 1;
+   min-width: 220px;
+   transition: border-color var(--motion-fast) ease;
+   border: var(--control-border);
+   border-radius: var(--control-radius);
+   background: var(--control-background);
+   color: var(--control-color);
+
+   font-size: var(--input-font-size, var(--font-size-md));
+   padding-inline: calc(var(--input-size, var(--control-height-md)) / 3);
+   height: var(--input-size, var(--input-height-md));
+
+   &::placeholder {
+      color: var(--control-placeholder);
+   }
+
+   &:focus,
+   &:hover {
+      border-color: var(--color-primary);
+   }
+
+   // States
+   &:disabled {
+      cursor: not-allowed;
+      color: var(--control-color-disabled);
+      background-color: var(--control-background-disabled);
+      border-color: var(--control-border-disabled);
+   }
+
+   &.error:not(:disabled) {
+      border-color: var(--color-error);
+      color: var(--color-error);
+
+      &::placeholder {
+         color: var(--color-error);
+      }
+   }
+
+   // Sizes
+   &.sm {
+      --input-font-size: var(--font-size-sm);
+      --input-size: var(--control-height-sm);
+   }
+
+   &.md {
+      --input-font-size: var(--font-size-md);
+      --input-size: var(--control-height-md);
+   }
+
+   &.lg {
+      --input-font-size: var(--font-size-lg);
+      --input-size: var(--control-height-lg);
+   }
+}

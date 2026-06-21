@@ -1,0 +1,82 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Table Container */
+.tableContainer {
+   width: 100%;
+   overflow-x: auto; // Ensures responsiveness
+   border-radius: var(--radius-md);
+   border: var(--border-control);
+   background: var(--color-bg-surface);
+}
+
+/* Table */
+.table {
+   width: 100%;
+   border-collapse: collapse;
+   background: var(--color-bg-surface);
+   text-align: left;
+   font-family: var(--font-family-sans);
+
+   // variant
+   &.striped .row:nth-child(even) {
+      background-color: var(--color-gray-50);
+   }
+
+   // Sizes
+   &.sm {
+      --table-padding: 0.5rem 0.75rem;
+      --table-font-size: 0.75rem;
+   }
+   &.md {
+      --table-padding: 0.75rem 1rem;
+      --table-font-size: 0.875rem;
+   }
+   &.lg {
+      --table-padding: 1rem 1.25rem;
+      --table-font-size: 1rem;
+   }
+}
+
+/* Table Header (thead) */
+.header {
+   background-color: var(--color-gray-100);
+   border-bottom: var(--border-control);
+}
+
+/* Table Row (tr) */
+.row {
+   transition: background-color var(--motion-fast) ease;
+   &:not(:last-child) {
+      border-bottom: var(--border-control);
+   }
+
+   &.hoverable:hover {
+      background-color: var(--color-gray-50);
+   }
+}
+
+.cell,
+.head {
+   padding: var(--table-padding, 0.75rem 1rem);
+   font-size: var(--table-font-size, 0.875rem);
+}
+
+/* Table Head (th) */
+.head {
+   font-weight: var(--font-weight-bold);
+   color: var(--color-text-strong);
+}
+
+/* Table Cell (td) */
+.cell {
+   //  Alignment
+   &.align-left {
+      text-align: left;
+   }
+   &.align-center {
+      text-align: center;
+   }
+   &.align-right {
+      text-align: right;
+   }
+}

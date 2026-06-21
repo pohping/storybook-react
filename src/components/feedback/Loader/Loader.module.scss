@@ -1,0 +1,34 @@
+@use '@/styles/base';
+
+/* Root Loader */
+.loader {
+   display: none;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 100%;
+   padding: var(--space-2);
+   font-size: 1rem;
+}
+
+/* State Modifier */
+.visible {
+   display: flex;
+}
+
+/* Variants */
+.page {
+   position: fixed;
+   inset: 0;
+   background: rgba(255, 255, 255, 0.75);
+   backdrop-filter: blur(4px);
+   z-index: var(--zindex-modal);
+   padding: var(--space-4);
+   font-size: 2.4rem;
+}
+
+/* Spinner */
+.spinner {
+   display: block;
+   animation: spin 1s ease-in-out infinite;
+}

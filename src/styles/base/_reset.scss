@@ -1,0 +1,97 @@
+/* Box sizing: easier math across the board */
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Remove default margins for common elements */
+:where(
+   html,
+   body,
+   main,
+   blockquote,
+   figure,
+   p,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   ul,
+   ol,
+   dl,
+   fieldset
+) {
+   margin: 0;
+   padding: 0;
+}
+
+/* Use a consistent border model and font inheritance on form controls */
+button,
+input,
+select,
+textarea {
+   font: inherit;
+   color: inherit;
+   background: transparent;
+}
+
+/* Make images and media behave */
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* Tables: keep layout neutral (components can override) */
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* Lists: remove default list styles (components can re-enable) */
+ul,
+ol {
+   list-style: none;
+}
+
+/* Anchor defaults — do not remove keyboard focusability */
+a {
+   color: inherit;
+   text-decoration: none;
+   background-color: transparent;
+}
+
+/* Buttons: remove platform appearance but keep keyboard focusability */
+button {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   border: none;
+   background: none;
+   padding: 0;
+}
+
+/* Form controls: remove spinners on number inputs in WebKit (optional) */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Media: keep audio/video controls visible but not oversized */
+audio,
+video {
+   max-width: 100%;
+}
+
+/* Summary/details default */
+details {
+   display: block;
+}

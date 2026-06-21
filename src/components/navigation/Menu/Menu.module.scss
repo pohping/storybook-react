@@ -1,0 +1,143 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Menu */
+.menu {
+   display: block;
+   background-color: var(--color-bg-surface);
+   //    border: 1px solid var(--ui-border-color);
+   border-radius: var(--radius-md);
+   width: 100%;
+
+   &.horizontal {
+      width: auto;
+   }
+}
+
+/* List */
+.list {
+   display: flex;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+
+   .floatingWrapper &,
+   .vertical & {
+      flex-direction: column;
+      gap: var(--space-1);
+      padding: var(--space-1);
+   }
+
+   .horizontal & {
+      flex-direction: row;
+      align-items: center;
+      gap: var(--space-2, 0.5rem);
+      padding: var(--space-1) var(--space-3);
+   }
+}
+
+/* Item */
+.item {
+   height: var(--control-height-md);
+   padding-inline: calc(var(--control-height-md) / 3);
+   border-radius: var(--radius-md);
+   cursor: pointer;
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: max-content;
+   text-decoration: none;
+   color: var(--color-text-primary);
+   background: transparent;
+   border: 1px solid transparent; // Prevents layout shifts on focus rings
+
+   .floatingWrapper & {
+      width: 100%;
+   }
+
+   .floatingWrapper &,
+   .horizontal & {
+      &:hover {
+         color: var(--color-primary-hover);
+         text-decoration: underline;
+      }
+
+      &.active {
+         color: var(--color-primary);
+      }
+   }
+
+   .vertical & {
+      width: 100%;
+
+      &:hover {
+         background-color: var(--color-gray-100, #f3f4f6);
+         color: var(--color-text-primary);
+      }
+
+      &.active {
+         background-color: var(--color-primary);
+         color: var(--color-on-secondary, #ffffff);
+         font-weight: 500;
+
+         &:hover {
+            background-color: var(--color-primary-hover);
+         }
+      }
+   }
+}
+
+/* SubMenu Layout */
+.subContainer {
+   display: block;
+   position: relative;
+   width: 100%;
+}
+
+.subTrigger {
+   user-select: none;
+}
+
+.label {
+   flex: 1;
+   text-align: left;
+}
+
+.section {
+   margin-left: var(--space-2);
+   font-size: 0.6em;
+}
+
+.arrow {
+   transition: transform var(--motion-fast, 150ms) ease;
+
+   .horizontal & {
+      transform: rotate(0deg);
+   }
+
+   .open & {
+      transform: rotate(180deg);
+   }
+}
+
+/* Vertical Accordion Animation Wrapper */
+.accordionWrapper {
+   overflow: hidden;
+   transition: height var(--motion-fast, 150ms) cubic-bezier(0.4, 0, 0.2, 1);
+
+   .list {
+      padding-left: var(
+         --space-4
+      ) !important; // Intentional nesting offset indent
+   }
+}
+
+/* Floating Popper Card Layout (Horizontal state overlays) */
+.floatingWrapper {
+   z-index: 100;
+   background-color: var(--color-bg-surface);
+   border-radius: var(--radius-md);
+   box-shadow: var(--shadow-lg);
+   min-width: 120px;
+   animation: fadeIn var(--motion-fast) ease;
+}

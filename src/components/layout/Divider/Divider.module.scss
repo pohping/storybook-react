@@ -1,0 +1,33 @@
+/* Root Divider */
+.divider {
+   display: flex;
+}
+
+/* Variants */
+.vertical {
+   width: var(--border-width);
+   height: 100%;
+   background: var(--color-border-default);
+}
+
+.horizontal {
+   display: flex;
+   align-items: center;
+   width: 100%;
+
+   &::before,
+   &::after {
+      content: '';
+      flex: 1;
+      height: var(--border-width);
+      background: var(--color-border-default);
+   }
+}
+
+/* Text Between Line */
+.text {
+   padding-inline: var(--space-3);
+   font-size: var(--font-size-md);
+   color: var(--text-main);
+   white-space: nowrap;
+}

@@ -1,0 +1,70 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Rating */
+.rating {
+   display: inline-flex;
+   align-items: center;
+   font-size: var(--font-size-md);
+   gap: 0.75em;
+
+   //  Sizes
+   &.sm {
+      font-size: var(--font-size-sm);
+   }
+   &.lg {
+      font-size: var(--font-size-lg);
+   }
+}
+
+/* Star list */
+.stars {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.25em;
+   user-select: none;
+}
+
+/* Star Button */
+.button {
+   all: unset;
+   position: relative;
+   display: inline-flex;
+   align-items: center;
+   color: var(--control-border-color);
+   cursor: pointer;
+
+   // Keyboard accessibility
+   &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+   }
+
+   &:disabled {
+      cursor: default;
+   }
+}
+
+/* Star Item */
+.star {
+   font-size: 1.2em;
+   transition: color var(--motion-fast) ease;
+}
+
+/* Overlay star to fill */
+.starOverlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   overflow: hidden;
+   color: var(--color-primary);
+   display: inline-flex;
+   align-items: center;
+   pointer-events: none; // Ensures the overlay doesn't steal mouse events from the button
+}
+
+/* Rating Label */
+.label {
+   line-height: 1.2;
+   color: var(--color-text-muted);
+}

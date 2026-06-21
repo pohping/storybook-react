@@ -1,0 +1,152 @@
+{
+   "data": {
+      "type": "product",
+      "id": "p-500",
+      "attributes": {
+         "sku": "KORG-PA1000",
+         "name": "Korg PA-1000 Professional Arranger Workstation",
+         "slug": "korg-pa-1000-professional-arranger",
+         "stock": 12,
+         "price": 6599.99,
+         "overallRating": 4.8,
+         "totalReviews": 5,
+         "description": "The Korg PA-1000 delivers professional arranger performance with powerful sounds, realistic accompaniment styles, and intuitive controls for live musicians and studio performers.",
+         "information": [
+            {
+               "title": "Keyboard",
+               "content": "61 keys, Natural Touch semi-weighted"
+            },
+            { "title": "Sounds", "content": "Over 1,300 high-quality sounds" },
+            {
+               "title": "Styles",
+               "content": "More than 400 full accompaniment styles"
+            },
+            { "title": "Display", "content": "7-inch color TouchView display" },
+            {
+               "title": "Speakers",
+               "content": "Built-in 2 × 10W + 2 × 5W amplification"
+            }
+         ],
+         "createdAt": "2025-10-15T09:00:00Z"
+      },
+      "relationships": {
+         "galleries": {
+            "data": [
+               { "type": "image", "id": "img-g1" },
+               { "type": "image", "id": "img-g2" },
+               { "type": "image", "id": "img-g3" },
+               { "type": "image", "id": "img-g4" },
+               { "type": "image", "id": "img-g5" },
+               { "type": "image", "id": "img-g6" },
+               { "type": "image", "id": "img-g7" }
+            ]
+         },
+         "thumbnail": { "data": { "type": "image", "id": "img-g1" } },
+         "reviews": {
+            "data": [
+               { "type": "review", "id": "rev-1" },
+               { "type": "review", "id": "rev-2" },
+               { "type": "review", "id": "rev-3" },
+               { "type": "review", "id": "rev-4" },
+               { "type": "review", "id": "rev-5" }
+            ]
+         }
+      }
+   },
+   "included": [
+      {
+         "type": "image",
+         "id": "img-g1",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14550983_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g2",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14550963_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g3",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14550978_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g4",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14550968_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g5",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14550973_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g6",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14551008_800.jpg"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-g7",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_42/421691/14551018_800.jpg"
+         }
+      },
+      {
+         "type": "review",
+         "id": "rev-1",
+         "attributes": {
+            "rating": 5,
+            "comment": "Absolute monster for live gigs. The styles are incredibly realistic.",
+            "createdAt": "2025-10-10T10:00:00Z"
+         }
+      },
+      {
+         "type": "review",
+         "id": "rev-2",
+         "attributes": {
+            "rating": 5,
+            "comment": "Recording and arranging sessions are so much faster now. Worth every penny.",
+            "createdAt": "2025-10-11T11:15:00Z"
+         }
+      },
+      {
+         "type": "review",
+         "id": "rev-3",
+         "attributes": {
+            "rating": 4,
+            "comment": "Big and heavy — check your keyboard stand weight rating.",
+            "createdAt": "2025-10-12T12:44:00Z"
+         }
+      },
+      {
+         "type": "review",
+         "id": "rev-4",
+         "attributes": {
+            "rating": 5,
+            "comment": "Sounds fantastic and stays responsive even with complex arrangements.",
+            "createdAt": "2025-10-13T08:50:00Z"
+         }
+      },
+      {
+         "type": "review",
+         "id": "rev-5",
+         "attributes": {
+            "rating": 5,
+            "comment": "Best arranger keyboard I've ever owned.",
+            "createdAt": "2025-10-14T17:20:00Z"
+         }
+      }
+   ]
+}

@@ -1,0 +1,546 @@
+{
+   "data": [
+      {
+         "type": "products",
+         "id": "p-001",
+         "attributes": {
+            "sku": "SKU-001",
+            "name": "Kawaii MP-11 SE",
+            "slug": "kawaii-mp-11-se",
+            "stock": 42,
+            "price": 6249.99,
+            "overallRating": 4.6,
+            "totalReviews": 48,
+            "description": "High-performance 88-key digital stage piano for live gigging and studio production.",
+            "information": [
+               { "title": "Keybed", "content": "Hammer Action" },
+               { "title": "Polyphony", "content": "128-voice" }
+            ],
+            "createdAt": "2025-08-10T10:12:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-001" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-001" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-002",
+         "attributes": {
+            "sku": "SKU-002",
+            "name": "Harley Benton ST-20HSS SBK Standard Series",
+            "slug": "harley-benton-st-20hss",
+            "stock": 18,
+            "price": 629.0,
+            "overallRating": 4.7,
+            "totalReviews": 102,
+            "description": "Compact high-efficiency electric guitar with 3 single-coil pickups for classic rock sounds.",
+            "information": [
+               { "title": "Body Wood", "content": "Solid Alder" },
+               { "title": "Fretboard", "content": "Rosewood" }
+            ],
+            "createdAt": "2025-08-09T09:00:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": { "type": "discounts", "id": "disc-001" } },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-002" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-002" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-003",
+         "attributes": {
+            "sku": "SKU-003",
+            "name": "Millenium MX422 Standard Set BL",
+            "slug": "millenium-mx422",
+            "stock": 33,
+            "price": 1229.5,
+            "overallRating": 4.4,
+            "totalReviews": 64,
+            "description": "Feature-rich electronic drum kit with mesh heads and multi-zone cymbal support.",
+            "information": [
+               { "title": "Configuration", "content": "5-Piece" },
+               { "title": "Module", "content": "Z790 Sound Engine" }
+            ],
+            "createdAt": "2025-07-30T15:30:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-003" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-003" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-004",
+         "attributes": {
+            "sku": "SKU-004",
+            "name": "Elixir Nanoweb Light Acoustic 3P",
+            "slug": "elixir-nanoweb-light-acoustic",
+            "stock": 56,
+            "price": 189.99,
+            "overallRating": 4.5,
+            "totalReviews": 77,
+            "description": "High-performance phosphor bronze string kit with protective coating for bright tones.",
+            "information": [
+               { "title": "Material", "content": "Phosphor Bronze" },
+               { "title": "Gauge", "content": "Light (12-53)" }
+            ],
+            "createdAt": "2025-08-01T08:20:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-004" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-004" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-005",
+         "attributes": {
+            "sku": "SKU-005",
+            "name": "Kai KTI-30 Tenor Ukulele",
+            "slug": "kai-kti-30-tenor-ukulele",
+            "stock": 120,
+            "price": 509.5,
+            "overallRating": 4.3,
+            "totalReviews": 210,
+            "description": "Rich-sounding tenor ukulele with sustained warmth, perfect for content creators and performers.",
+            "information": [
+               { "title": "Size", "content": "Tenor" },
+               { "title": "Top Material", "content": "Solid Mahogany" }
+            ],
+            "createdAt": "2025-06-20T11:45:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": { "type": "discounts", "id": "disc-002" } },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-005" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-005" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-006",
+         "attributes": {
+            "sku": "SKU-006",
+            "name": "Boss Cube Street II Black",
+            "slug": "boss-cube-street",
+            "stock": 28,
+            "price": 1129.99,
+            "overallRating": 4.2,
+            "totalReviews": 34,
+            "description": "Fully modular 850W modeling amplifier with built-in digital effects and premium power efficiency.",
+            "information": [
+               { "title": "Output Power", "content": "850W Peak" },
+               { "title": "Amp Type", "content": "Solid State / Modeling" }
+            ],
+            "createdAt": "2025-05-12T14:00:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-006" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-006" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-007",
+         "attributes": {
+            "sku": "SKU-007",
+            "name": "Gator GWE 6 & 12-String Dread Case",
+            "slug": "gator-gwe-6-12-string-dread-case",
+            "stock": 65,
+            "price": 259.0,
+            "overallRating": 4.1,
+            "totalReviews": 21,
+            "description": "Sleek, rugged hardshell guitar case with plush interior and impact-resistant outer molding.",
+            "information": [
+               { "title": "Instrument Type", "content": "Electric Guitar" },
+               { "title": "Interior Length", "content": "1015mm" }
+            ],
+            "createdAt": "2025-07-05T12:00:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-007" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-007" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-008",
+         "attributes": {
+            "sku": "SKU-008",
+            "name": "Wittner Metronome 813M with Bell",
+            "slug": "wittner-metronome-813m",
+            "stock": 40,
+            "price": 89.99,
+            "overallRating": 4.4,
+            "totalReviews": 59,
+            "description": "Quiet mechanical wind-up metronome with traditional bell chiming and precision speed settings.",
+            "information": [
+               { "title": "Tempo Range", "content": "40-208 BPM" },
+               { "title": "Chime Beats", "content": "0, 2, 3, 4, 6" }
+            ],
+            "createdAt": "2025-04-18T09:30:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-008" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-008" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-009",
+         "attributes": {
+            "sku": "SKU-009",
+            "name": "Istanbul Agop 24 Traditional Dark Ride",
+            "slug": "instanbul-agop-24-traditional-dark-ride",
+            "stock": 22,
+            "price": 2249.0,
+            "overallRating": 4.5,
+            "totalReviews": 88,
+            "description": "24-inch premium B20 bronze ride cymbal, delivering a bright ping, clear bell, and rich overtones.",
+            "information": [
+               { "title": "Alloy", "content": "B20 Bronze" },
+               { "title": "Finish", "content": "Brilliant" }
+            ],
+            "createdAt": "2025-03-02T16:10:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": { "type": "discounts", "id": "disc-003" } },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-009" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-009" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-010",
+         "attributes": {
+            "sku": "SKU-010",
+            "name": "Peterson StroboClip HDC",
+            "slug": "peterson-stroboclip-hdc",
+            "stock": 87,
+            "price": 279.99,
+            "overallRating": 4.6,
+            "totalReviews": 134,
+            "description": "Compact clip-on chromatic tuner featuring a bright color-changing screen and high pitch sensitivity.",
+            "information": [
+               {
+                  "title": "Tuning Modes",
+                  "content": "Chromatic, Guitar, Bass, Ukulele"
+               },
+               { "title": "Display", "content": "Full Color LCD" }
+            ],
+            "createdAt": "2025-02-14T10:00:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-004" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-010" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-011",
+         "attributes": {
+            "sku": "SKU-011",
+            "name": "Yamaha FC 5 Sustain Pedal",
+            "slug": "yamaha-fc-5-sustain-pedal",
+            "stock": 150,
+            "price": 259.5,
+            "overallRating": 4.3,
+            "totalReviews": 98,
+            "description": "Ergonomic wireless Bluetooth sustain pedal with an ultra-low latency response sensor.",
+            "information": [
+               { "title": "Connectivity", "content": "Bluetooth / 2.4GHz" },
+               { "title": "Battery Life", "content": "Up to 80 hours" }
+            ],
+            "createdAt": "2025-01-05T13:50:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": { "type": "discounts", "id": "disc-004" } },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-010" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-011" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      },
+      {
+         "type": "products",
+         "id": "p-012",
+         "attributes": {
+            "sku": "SKU-012",
+            "name": "Sennheiser RS 275",
+            "slug": "sennheiser-rs-275",
+            "stock": 44,
+            "price": 969.99,
+            "overallRating": 4.0,
+            "totalReviews": 40,
+            "description": "Over-ear monitoring headphones with flat response sound signature for audio tracking and production.",
+            "information": [
+               { "title": "Connection", "content": "3.5mm / 6.3mm Adapter" },
+               { "title": "Design", "content": "Closed-Back" }
+            ],
+            "createdAt": "2025-06-01T09:20:00+08:00"
+         },
+         "relationships": {
+            "discount": { "data": null },
+            "galleries": { "data": [] },
+            "category": { "data": { "type": "categories", "id": "cat-011" } },
+            "thumbnail": { "data": { "type": "images", "id": "img-012" } },
+            "reviews": { "data": [] },
+            "optionVariants": { "data": [] }
+         }
+      }
+   ],
+   "included": [
+      {
+         "type": "images",
+         "id": "img-001",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/424720.jpg",
+            "alt": "Kawaii MP-11 SE",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-002",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/449491.jpg",
+            "alt": "Harley Benton ST-20HSS SBK Standard Series",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-003",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/452093.jpg",
+            "alt": "Millenium MX422 Standard Set BL thumbnail",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-004",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/369291.jpg",
+            "alt": "Elixir Nanoweb Light Acoustic 3P",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-005",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/483016.jpg",
+            "alt": "Kai KTI-30 Tenor Ukulele",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-006",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/522784.jpg",
+            "alt": "Boss Cube Street II Black",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-007",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/250337.jpg",
+            "alt": "Gator GWE 6 & 12-String Dread Case",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-008",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/133454.jpg",
+            "alt": "Wittner Metronome 813M with Bell",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-009",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/409166.jpg",
+            "alt": "Istanbul Agop 24 Traditional Dark Ride",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-010",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/579936.jpg",
+            "alt": "Peterson StroboClip HDC",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-011",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/102919.jpg",
+            "alt": "Yamaha FC 5 Sustain Pedal",
+            "width": 600,
+            "height": 400
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-012",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb248x248/pics/prod/634646.jpg",
+            "alt": "Sennheiser RS 275",
+            "width": 600,
+            "height": 400
+         }
+      },
+
+      {
+         "type": "categories",
+         "id": "cat-001",
+         "attributes": { "name": "Keyboards & Pianos" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-002",
+         "attributes": { "name": "Guitars" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-003",
+         "attributes": { "name": "Drums & Percussion" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-004",
+         "attributes": { "name": "Strings & Tuners" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-005",
+         "attributes": { "name": "Folk Instruments" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-006",
+         "attributes": { "name": "Amplifiers" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-007",
+         "attributes": { "name": "Instrument Cases" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-008",
+         "attributes": { "name": "Music Accessories" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-009",
+         "attributes": { "name": "Cymbals" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-010",
+         "attributes": { "name": "Pedals" }
+      },
+      {
+         "type": "categories",
+         "id": "cat-011",
+         "attributes": { "name": "Studio Headphones" }
+      },
+
+      {
+         "type": "discounts",
+         "id": "disc-001",
+         "attributes": {
+            "type": "percentage",
+            "value": 10,
+            "description": "10% off limited time"
+         }
+      },
+      {
+         "type": "discounts",
+         "id": "disc-002",
+         "attributes": {
+            "type": "fixed",
+            "value": 15,
+            "description": "$15 off"
+         }
+      },
+      {
+         "type": "discounts",
+         "id": "disc-003",
+         "attributes": {
+            "type": "percentage",
+            "value": 5,
+            "description": "5% off"
+         }
+      },
+      {
+         "type": "discounts",
+         "id": "disc-004",
+         "attributes": {
+            "type": "bundle",
+            "value": 0,
+            "description": "Bundle deal"
+         }
+      }
+   ]
+}

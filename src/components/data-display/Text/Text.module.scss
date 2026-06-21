@@ -1,0 +1,106 @@
+@use '@/styles/abstracts' as *;
+
+$h1-min: 28px;
+$h1-max: 48px;
+$h2-min: 22px;
+$h2-max: 36px;
+$h3-min: 20px;
+$h3-max: 30px;
+$h4-min: 18px;
+$h4-max: 22px;
+$h5-min: 16px;
+$h5-max: 18px;
+$h6-min: 14px;
+$h6-max: 16px;
+
+/* Base Text */
+.text {
+   margin: 0;
+   color: var(--color-text-primary, inherit);
+   font-family: var(--font-sans);
+}
+
+/* Heading */
+.h1 {
+   @include fluid-type($h1-min, $h1-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-tight);
+   font-weight: var(--font-weight-bold);
+}
+.h2 {
+   @include fluid-type($h2-min, $h2-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-tight);
+   font-weight: var(--font-weight-bold);
+}
+.h3 {
+   @include fluid-type($h3-min, $h3-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-snug);
+   font-weight: var(--font-weight-semibold);
+}
+.h4 {
+   @include fluid-type($h4-min, $h4-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-snug);
+   font-weight: var(--font-weight-semibold);
+}
+.h5 {
+   @include fluid-type($h5-min, $h5-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-normal);
+   font-weight: var(--font-weight-semibold);
+}
+.h6 {
+   @include fluid-type($h6-min, $h6-max);
+   font-family: var(--font-mono);
+   line-height: var(--line-height-normal);
+   font-weight: var(--font-weight-medium);
+}
+
+/* Body */
+.body {
+   font-size: var(--font-size-md);
+   line-height: var(--line-height-relaxed);
+}
+
+/* Variant */
+.small {
+   font-size: var(--font-size-sm,);
+   line-height: var(--line-height-normal);
+}
+
+.caption {
+   font-size: var(--font-size-xs);
+   line-height: var(--line-height-normal);
+   color: var(--color-text-muted);
+}
+
+/* Alignment */
+.align-left {
+   text-align: left;
+}
+.align-center {
+   text-align: center;
+}
+.align-right {
+   text-align: right;
+}
+.align-justify {
+   text-align: justify;
+}
+
+/* Modifiers */
+.strikeThrough {
+   text-decoration: line-through;
+}
+
+.truncate {
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+   -webkit-line-clamp: var(--text-line-clamp, 1);
+   line-clamp: var(--text-line-clamp, 1);
+}

@@ -1,0 +1,23 @@
+/* Root Brand */
+.brandWrapper {
+   flex-shrink: 0;
+}
+
+/* Brand */
+.brand {
+   display: inline-flex;
+   align-items: center;
+   color: var(--color-primary);
+   gap: 2px;
+}
+
+/* Image Logo */
+.logo {
+   font-size: 48px;
+}
+
+/* Brand Text */
+.text {
+   flex-shrink: 0;
+   font-size: 24px;
+}

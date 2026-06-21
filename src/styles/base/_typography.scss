@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+h1 {
+   @include fluid-type(28px, 48px);
+   font-weight: 700;
+   line-height: var(--line-height-tight);
+}
+
+h2 {
+   @include fluid-type(24px, 36px);
+   font-weight: 600;
+   line-height: var(--line-height-tight);
+}
+
+h3 {
+   @include fluid-type(20px, 28px);
+   font-weight: 600;
+   line-height: var(--line-height-snug);
+}
+
+p {
+   margin-bottom: var(--space-1);
+   line-height: var(--line-height-relaxed);
+}
+
+.text-muted {
+   color: var(--color-text-muted);
+   font-size: 0.875rem;
+}

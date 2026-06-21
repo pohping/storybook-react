@@ -1,0 +1,74 @@
+@use '@/styles/abstracts';
+
+.bannerSlide {
+   height: 100%;
+   position: relative;
+}
+
+.content {
+   position: absolute;
+   //  left: 6rem;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 10;
+   display: flex;
+   flex-direction: column;
+
+   &,
+   .left & {
+      left: 6rem;
+      align-items: flex-start;
+   }
+
+   .center & {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      align-items: center;
+   }
+
+   .right & {
+      right: 6rem;
+      align-items: flex-end;
+   }
+}
+
+// .left {
+//    left: 6rem;
+// }
+
+// .center {
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    text-align: center;
+// }
+
+// .right {
+//    right: 6rem;
+// }
+
+.ctaButton {
+   margin-top: var(--space-6);
+}
+
+.title,
+.description {
+   color: var(--color-white);
+}
+
+.description {
+   margin-top: var(--space-3);
+}
+
+.imageContainer {
+   position: relative;
+   height: 100%;
+   width: 100%;
+
+   &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.32);
+   }
+}

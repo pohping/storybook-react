@@ -1,0 +1,15 @@
+.appWrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+
+   &.topPadded {
+      --app-margin-top: var(--space-3);
+   }
+}
+
+.main {
+   flex: 1;
+   margin-top: var(--space-3);
+   margin-bottom: var(--space-6);
+}

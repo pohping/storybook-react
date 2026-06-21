@@ -1,0 +1,93 @@
+@use 'sass:math';
+@use 'functions' as *;
+@use './variables' as *;
+
+/* Modern Fluid Typography */
+@mixin fluid-type($min-size, $max-size, $min-vw: 320px, $max-vw: 1200px) {
+   $min-rem: rem($min-size);
+   $max-rem: rem($max-size);
+
+   // Perform pure numeric math inside Sass using math.div
+   $slope: math.div(
+      strip-unit($max-size - $min-size),
+      strip-unit($max-vw - $min-vw)
+   );
+
+   $y-axis-intersection: -1 * strip-unit($min-vw) * $slope +
+      strip-unit($min-size);
+
+   // Pass the calculated results cleanly into the CSS clamp function
+   font-size: clamp(
+      #{$min-rem},
+      #{rem($y-axis-intersection)} + #{$slope * 100}vw,
+      #{$max-rem}
+   );
+}
+
+/* Media Query Helpers */
+@mixin up($key) {
+   $value: breakpoint($key);
+   @media (min-width: $value) {
+      @content;
+   }
+}
+
+@mixin down($key) {
+   $value: breakpoint($key);
+   @media (max-width: ($value - 0.02px)) {
+      @content;
+   }
+}
+
+/* Main responsive mixin */
+@mixin respond-from($breakpoint) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      $value: map-get($breakpoints, $breakpoint);
+      @media (min-width: $value) {
+         @content;
+      }
+   } @else {
+      @warn "Unknown breakpoint: #{$breakpoint}";
+   }
+}
+
+/* Shared Control Base */
+@mixin control-base {
+   display: inline-flex;
+   align-items: center;
+   height: var(--control-height-md);
+   padding: var(--control-py) var(--control-px);
+   font-size: var(--control-font-size);
+   border-radius: var(--control-radius);
+   border: var(--control-border-width) solid var(--border-color);
+   transition: var(--transition-base);
+
+   // Ensure consistent box-sizing
+   box-sizing: border-box;
+
+   &:focus-within,
+   &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px var(--color-primary-alpha-20);
+   }
+}
+
+@mixin animate-spin($duration: 1s) {
+   animation: spin $duration linear infinite;
+}
+
+@mixin animate-fade-in($duration: 0.3s, $ease: ease-out) {
+   animation: fadeIn $duration $ease forwards;
+}
+
+@mixin skeleton-shimmer {
+   background: linear-gradient(
+      90deg,
+      var(--color-gray-500) 25%,
+      var(--color-gray-300) 50%,
+      var(--color-gray-500) 75%
+   );
+   background-size: 200% 100%;
+   animation: shimmer 1.5s infinite linear;
+}

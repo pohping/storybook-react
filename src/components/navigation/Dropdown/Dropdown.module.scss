@@ -1,0 +1,99 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Dropdown */
+.dropdown {
+   display: inline-block;
+   cursor: pointer;
+
+   &.disabled {
+      cursor: not-allowed;
+      opacity: var(--opacity-disabled);
+   }
+}
+
+/* Floating Menu Panel */
+.menu {
+   --dropdown-item-size: var(--control-height-md);
+   --dropdown-item-inline-padding: calc(var(--dropdown-item-size) / 3);
+
+   z-index: var(--z-index-dropdown);
+   padding: var(--space-1);
+   background: var(--color-bg-surface);
+   border: var(--border-control);
+   border-radius: var(--radius-md);
+   box-shadow: var(--shadow-md);
+   min-width: 160px;
+}
+
+/* List Reset */
+.list {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 2px; // Tiny gap between items looks cleaner than pure stacking
+}
+
+/* Menu Item */
+.item {
+   display: flex;
+   align-items: center;
+   gap: var(--space-2);
+   cursor: pointer;
+   min-height: var(--dropdown-item-size);
+   padding-inline: var(--dropdown-item-inline-padding);
+   border-radius: var(--radius-sm);
+   font-size: var(--font-size-md);
+   color: var(--color-text-main);
+   user-select: none;
+   transition:
+      background-color var(--motion-fast) ease,
+      color var(--motion-fast) ease;
+
+   &:hover:not(.disabledItem) {
+      background: var(--color-surface-hover);
+   }
+
+   // States
+   &.disabled {
+      cursor: not-allowed;
+      color: var(--color-text-disabled);
+
+      .icon {
+         color: inherit;
+      }
+   }
+
+   &.danger {
+      color: var(--color-error);
+
+      &:hover:not(.disabledItem) {
+         background: var(--color-error);
+         color: var(--color-white);
+      }
+   }
+}
+
+.icon {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--color-text-muted);
+   font-size: 1.1em;
+
+   .danger & {
+      color: inherit;
+   }
+}
+
+.label {
+   flex: 1;
+}
+
+/* Separator */
+.divider {
+   height: 1px;
+   background-color: var(--color-border-default);
+   margin-block: var(--space-1);
+}

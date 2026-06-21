@@ -1,0 +1,45 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Icon */
+.icon {
+   // Local tokens
+   --icon-size: 1.5em; // Default md
+   --icon-color: currentColor;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+
+   font-size: var(--icon-size);
+   color: var(--icon-color);
+   line-height: 1;
+
+   svg {
+      width: 1em;
+      height: 1em;
+      //   fill: none; // Assuming outline icons, adjust if using fill
+      //   stroke: currentColor;
+   }
+
+   &.spin {
+      @include animate-spin();
+   }
+
+   //    Sizes
+   &.xs {
+      --icon-size: 1rem;
+   }
+   &.sm {
+      --icon-size: 1.25rem;
+   }
+   &.md {
+      --icon-size: 1.5rem;
+   }
+   &.lg {
+      --icon-size: 2rem;
+   }
+   &.xl {
+      --icon-size: 3rem;
+   }
+}

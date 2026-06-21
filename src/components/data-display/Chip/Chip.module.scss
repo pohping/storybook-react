@@ -1,0 +1,97 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Chip */
+.chip {
+   //  Local Tokens
+   --chip-bg: var(--color-gray-100);
+   --chip-color: var(--color-gray-800);
+   --chip-border: 1px solid transparent;
+   --chip-height: 2rem;
+   --chip-px: var(--space-3);
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: var(--space-2);
+   height: var(--chip-height);
+   padding-inline: var(--chip-px);
+
+   background-color: var(--chip-bg);
+   color: var(--chip-color);
+   border: var(--chip-border);
+   border-radius: var(--radius-full);
+
+   font-family: var(--font-sans);
+   font-size: 0.875rem;
+   font-weight: 500;
+   white-space: nowrap;
+   transition: all var(--transition-fast);
+   user-select: none;
+
+   //  Variants
+   &.outlined {
+      --chip-bg: transparent;
+      --chip-border: 1px solid var(--color-gray-300);
+   }
+
+   &.ghost {
+      --chip-bg: transparent;
+      --chip-color: var(--color-gray-600);
+   }
+
+   //  Size
+   &.sm {
+      --chip-height: 1.5rem;
+      --chip-px: var(--space-2);
+      font-size: 0.75rem;
+   }
+
+   //  States
+   &.clickable {
+      cursor: pointer;
+      &:hover {
+         filter: brightness(0.95);
+      }
+      &:active {
+         transform: scale(0.98);
+      }
+   }
+}
+
+/* Chip Label */
+.label {
+   line-height: 1;
+}
+
+/* Alternative Icon */
+.icon {
+   display: flex;
+   flex-shrink: 0;
+   font-size: 1.1em;
+}
+
+/* Delete Button */
+.deleteButton {
+   all: unset;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-inline-end: calc(var(--chip-px) * -0.5); // Pull closer to the edge
+   cursor: pointer;
+   border-radius: 50%;
+   padding: 2px;
+   color: currentColor;
+   opacity: 0.7;
+   transition:
+      opacity 0.2s,
+      background-color 0.2s;
+
+   &:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.1);
+   }
+
+   &:focus-visible {
+      outline: 2px solid var(--color-primary);
+   }
+}

@@ -1,0 +1,55 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Avatar */
+.avatar {
+   --avatar-size: 3rem;
+   --avatar-bg: var(--color-gray-200);
+   --avatar-border: var(--border-control);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+
+   width: var(--avatar-size);
+   height: var(--avatar-size);
+   border-radius: 50%;
+   border: var(--avatar-border);
+   background-color: var(--avatar-bg);
+   overflow: hidden;
+   user-select: none;
+
+   //  Sizes
+   &.sm {
+      --avatar-size: 4rem;
+   }
+   &.md {
+      --avatar-size: 6rem;
+   }
+   &.lg {
+      --avatar-size: 8rem;
+   }
+}
+
+/* Avatar Image */
+.image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+/* Fallback Text */
+.fallback {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+
+   color: var(--color-text-muted);
+   font-weight: 600;
+   font-size: calc(var(--avatar-size) * 0.4);
+   text-transform: uppercase;
+   background-color: var(--color-gray-100);
+}

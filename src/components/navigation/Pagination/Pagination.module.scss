@@ -1,0 +1,91 @@
+@use '@/styles/abstracts' as *;
+
+.pagination {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: var(--space-2, 0.5rem);
+   padding-block: var(--space-3, 0.75rem);
+   font-size: var(--pagination-font-size, var(--font-size-md, 1rem));
+
+   &.sm {
+      --pagination-font-size: var(--font-size-sm);
+      --pagination-item-size: 2rem;
+   }
+
+   &.md {
+      --pagination-font-size: var(--font-size-md);
+      --pagination-item-size: 2.25rem;
+   }
+
+   &.lg {
+      --pagination-font-size: var(--font-size-lg);
+      --pagination-item-size: 2.5rem;
+   }
+}
+
+.list {
+   all: unset;
+   display: flex;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   gap: calc(var(--pagination-item-size, 2.25rem) / 3);
+}
+
+.item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.pageButton {
+   all: unset;
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: var(--radius-md);
+   transition:
+      background var(--motion-fast) ease,
+      color var(--motion-fast) ease;
+   color: var(--color-text-primary);
+   min-width: var(--pagination-item-size);
+   min-height: var(--pagination-item-size);
+   text-align: center;
+   user-select: none;
+
+   &:hover:not(.disabled):not(.active) {
+      background-color: var(--color-bg-surface-hover);
+   }
+
+   &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+   }
+
+   &.active {
+      background: var(--color-primary);
+      color: var(--color-on-primary);
+      font-weight: 600;
+      cursor: default;
+   }
+
+   &.disabled {
+      opacity: var(--opacity-disabled);
+      cursor: not-allowed;
+      color: var(--text-muted);
+   }
+}
+
+.ellipsis {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding-inline: var(--space-2);
+   color: var(--text-muted);
+   min-width: var(--pagination-item-size);
+   height: var(--pagination-item-size);
+   user-select: none;
+}

@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+/* -------------------------------------------------------------------------- */
+/* Spacing Utility Generator                         */
+/* -------------------------------------------------------------------------- */
+
+// Map of spacing directions and their corresponding CSS properties
+$directions: (
+   '': '',
+   // All sides
+   't': '-top',
+   'b': '-bottom',
+   'l': '-left',
+   'r': '-right',
+   'x': (
+      '-left',
+      '-right',
+   ),
+   // Horizontal axis
+   'y': (
+         '-top',
+         '-bottom',
+      ), // Vertical axis
+);
+
+// Map of spacing types
+$types: (
+   'm': 'margin',
+   'p': 'padding',
+);
+
+// Loop through types (margin, padding)
+@each $type-key, $type-value in $types {
+   // Loop through directions (top, bottom, x, y, etc.)
+   @each $dir-key, $dir-value in $directions {
+      // Loop through your pre-defined spacers map
+      @each $space-key, $space-value in $spacers {
+         .#{$type-key}#{$dir-key}-#{$space-key} {
+            // Handle multi-directional axes (x and y)
+            @if type-of($dir-value) == 'list' {
+               @each $sub-dir in $dir-value {
+                  #{$type-value}#{$sub-dir}: var(
+                     --space-#{$space-key}
+                  ) !important;
+               }
+            }
+            // Handle single directions (t, b, l, r) or all sides ("")
+            @else {
+               #{$type-value}#{$dir-value}: var(
+                  --space-#{$space-key}
+               ) !important;
+            }
+         }
+      }
+   }
+}

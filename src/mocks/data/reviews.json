@@ -1,0 +1,152 @@
+{
+   "meta": {
+      "pagination": {
+         "currentPage": 2,
+         "itemsPerPage": 10,
+         "totalItems": 47,
+         "totalPage": 5
+      },
+      "averageRating": 4.4,
+      "ratingCount": 47,
+      "rates": { "1": 1, "2": 3, "3": 6, "4": 12, "5": 25 }
+   },
+   "data": [
+      {
+         "type": "reviews",
+         "id": "rev-1",
+         "attributes": {
+            "rating": 5,
+            "comment": "Amazing build quality and super responsive keys. Perfectly quiet even during intense live performances.",
+            "votes": { "up": 12, "down": 1 },
+            "createdAt": "2025-01-15T10:14:00.000Z"
+         },
+         "relationships": {
+            "product": { "data": { "type": "products", "id": "prod-1" } },
+            "user": { "data": { "type": "users", "id": "user-1" } }
+         }
+      },
+      {
+         "type": "reviews",
+         "id": "rev-2",
+         "attributes": {
+            "rating": 4,
+            "comment": "The sounds and styles are fantastic, but delivery took a bit longer than expected.",
+            "votes": { "up": 5, "down": 0 },
+            "createdAt": "2025-01-16T13:40:11.000Z"
+         },
+         "relationships": {
+            "product": { "data": { "type": "products", "id": "prod-1" } },
+            "user": { "data": { "type": "users", "id": "user-2" } }
+         }
+      },
+      {
+         "type": "reviews",
+         "id": "rev-3",
+         "attributes": {
+            "rating": 5,
+            "comment": "Best purchase I made this year. The accompaniment styles feel incredibly realistic. Zero regrets.",
+            "votes": { "up": 21, "down": 2 },
+            "createdAt": "2025-01-17T08:22:03.000Z"
+         },
+         "relationships": {
+            "product": { "data": { "type": "products", "id": "prod-1" } },
+            "user": { "data": { "type": "users", "id": "user-3" } }
+         }
+      },
+      {
+         "type": "reviews",
+         "id": "rev-4",
+         "attributes": {
+            "rating": 3,
+            "comment": "Good overall, but the built-in speakers can get a bit loud when pushing high volumes.",
+            "votes": { "up": 3, "down": 4 },
+            "createdAt": "2025-01-18T15:55:44.000Z"
+         },
+         "relationships": {
+            "product": { "data": { "type": "products", "id": "prod-1" } },
+            "user": { "data": { "type": "users", "id": "user-4" } }
+         }
+      },
+      {
+         "type": "reviews",
+         "id": "rev-5",
+         "attributes": {
+            "rating": 5,
+            "comment": "Plug and play right out of the box. The TouchView display and styles make arranging so intuitive. Highly recommended.",
+            "votes": { "up": 9, "down": 0 },
+            "createdAt": "2025-01-19T09:10:55.000Z"
+         },
+         "relationships": {
+            "product": { "data": { "type": "products", "id": "prod-1" } },
+            "user": { "data": { "type": "users", "id": "user-5" } }
+         }
+      }
+   ],
+   "included": [
+      {
+         "type": "users",
+         "id": "user-1",
+         "attributes": { "name": "Mark Lee" },
+         "relationships": {
+            "avatar": { "data": { "type": "images", "id": "img-avatar-1" } }
+         }
+      },
+      {
+         "type": "users",
+         "id": "user-2",
+         "attributes": { "name": "Alice Tan" },
+         "relationships": {
+            "avatar": { "data": { "type": "images", "id": "img-avatar-2" } }
+         }
+      },
+      {
+         "type": "users",
+         "id": "user-3",
+         "attributes": { "name": "Ryan Chen" },
+         "relationships": {
+            "avatar": { "data": { "type": "images", "id": "img-avatar-3" } }
+         }
+      },
+      {
+         "type": "users",
+         "id": "user-4",
+         "attributes": { "name": "Kevin Wong" },
+         "relationships": {
+            "avatar": { "data": { "type": "images", "id": "img-avatar-4" } }
+         }
+      },
+      {
+         "type": "users",
+         "id": "user-5",
+         "attributes": { "name": "Sara Goh" },
+         "relationships": {
+            "avatar": { "data": { "type": "images", "id": "img-avatar-5" } }
+         }
+      },
+      {
+         "type": "images",
+         "id": "img-avatar-1",
+         "attributes": { "url": "https://picsum.photos/200/200?1" }
+      },
+      {
+         "type": "images",
+         "id": "img-avatar-2",
+         "attributes": { "url": "https://picsum.photos/200/200?2" }
+      },
+      {
+         "type": "images",
+         "id": "img-avatar-3",
+         "attributes": { "url": "https://picsum.photos/200/200?3" }
+      },
+      {
+         "type": "images",
+         "id": "img-avatar-4",
+         "attributes": { "url": "https://picsum.photos/200/200?4" }
+      },
+      {
+         "type": "images",
+         "id": "img-avatar-5",
+         "attributes": { "url": "https://picsum.photos/200/200?5" }
+      }
+   ]
+}

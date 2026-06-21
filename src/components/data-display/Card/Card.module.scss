@@ -1,0 +1,78 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Card */
+.card {
+   //  Local tokens
+   --card-bg: var(--color-bg-surface, #ffffff);
+   --card-border: none;
+   --card-shadow: none;
+   --card-radius: var(--radius-md, 12px);
+   --card-padding: var(--space-2);
+
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   background-color: var(--card-bg);
+   border-radius: var(--card-radius);
+   border: var(--card-border);
+   box-shadow: var(--card-shadow);
+   overflow: hidden;
+   transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+   &.padded {
+      --card-padding: var(--space-4);
+   }
+
+   //  Variants
+   &.elevated {
+      --card-shadow: var(--shadow-sm);
+      &:hover {
+         --card-shadow: var(--shadow-md);
+      }
+   }
+
+   &.outlined {
+      --card-border: 1px solid var(--color-gray-200);
+      --card-shadow: none;
+   }
+
+   &.filled {
+      --card-bg: var(--color-gray-100);
+      --card-border: none;
+   }
+
+   &.ghost {
+      --card-bg: transparent;
+      --card-border: none;
+      --card-shadow: none;
+      --card-radius: 0;
+   }
+}
+
+/* Cover Image */
+.cover {
+   overflow: hidden;
+   background-size: var(--card-cover-fit, cover);
+   background-position: center;
+   background-repeat: no-repeat;
+   aspect-ratio: var(--card-cover-aspect, 16 / 9);
+}
+
+/* Card Content */
+.content {
+   padding: var(--card-padding);
+   display: flex;
+   flex-direction: column;
+
+   flex: 1; // Ensures content fills remaining space
+
+   &.center {
+      text-align: center;
+   }
+
+   &.right {
+      text-align: right;
+   }
+}

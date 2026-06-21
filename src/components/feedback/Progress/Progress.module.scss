@@ -1,0 +1,74 @@
+@use '@/styles/base' as *;
+
+/* Root Progress */
+.progress {
+   --progress-indicator-color: var(--color-primary);
+
+   display: flex;
+   align-items: center;
+   gap: var(--space-1);
+
+   &.sm {
+      --progress-track-size: 0.5rem;
+      --progress-font-size: 0.75rem;
+   }
+   &.md {
+      --progress-track-size: 0.75rem;
+      --progress-font-size: 0.875rem;
+   }
+   &.lg {
+      --progress-track-size: 1rem;
+      --progress-font-size: 1rem;
+   }
+}
+
+/* Track */
+.track {
+   flex: 1;
+   height: var(--progress-track-size, 0.75rem);
+   background: var(--color-gray-200);
+   border-radius: var(--radius-full);
+   padding: 1px;
+   overflow: hidden;
+   position: relative;
+}
+
+/* Indicator */
+.indicator {
+   height: 100%;
+   width: var(--progress-indicator-percent, 0);
+   border-radius: var(--radius-full);
+   background: var(--progress-indicator-color);
+
+   .gradient & {
+      background: linear-gradient(
+         90deg,
+         var(--progress-indicator-color),
+         color-mix(var(--progress-indicator-color) 20%, var(--color-white))
+      );
+   }
+
+   .striped & {
+      background-image: linear-gradient(
+         45deg,
+         rgba(255, 255, 255, 0.15) 25%,
+         transparent 25%,
+         transparent 50%,
+         rgba(255, 255, 255, 0.15) 50%,
+         rgba(255, 255, 255, 0.15) 75%,
+         transparent 75%,
+         transparent
+      );
+      background-size: 2.5rem 2.5rem;
+
+      animation: move-stripe 1s linear infinite;
+   }
+}
+
+/* Label */
+.label {
+   font-size: var(--progress-font-size);
+   min-width: 3ch;
+   text-align: right;
+   color: var(--color-text-muted);
+}

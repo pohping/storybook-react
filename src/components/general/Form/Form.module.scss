@@ -1,0 +1,63 @@
+@use '@/styles/abstracts' as *;
+
+/* Root Form */
+.form {
+   color: var(--color-text);
+}
+
+/* Form Label */
+.label {
+   display: block;
+   width: 100%;
+   line-height: var(--control-height-md);
+   font-weight: var(--font-weight-medium);
+   color: var(--text-main);
+
+   &.required::after {
+      content: '*';
+      padding-left: var(--space-2);
+      color: var(--color-warning);
+   }
+}
+
+/* Form Item */
+.item {
+   display: grid;
+
+   .vertical &,
+   & {
+      grid-template-columns: 1;
+   }
+
+   .horizontal & {
+      gap: var(--space-1);
+      grid-template-columns: 12.5rem 1fr;
+   }
+
+   & + & {
+      margin-top: var(--space-1);
+   }
+}
+
+/* Form Control */
+.control {
+   width: 100%;
+}
+
+/* Input */
+.input {
+   min-height: var(--form-item-height);
+   display: flex;
+   align-items: center;
+}
+
+.errorMsg {
+   color: var(--color-error);
+   min-height: 1lh;
+   margin: var(--space-1);
+   visibility: hidden;
+
+   .error & {
+      visibility: visible;
+   }
+}

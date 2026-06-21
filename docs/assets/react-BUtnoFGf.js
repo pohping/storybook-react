@@ -1,0 +1,1 @@
+import{n as e,t}from"./react-BP2ljfGL.js";t();export{e as MDXProvider};

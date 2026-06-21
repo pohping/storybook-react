@@ -1,0 +1,306 @@
+{
+   "data": [
+      {
+         "type": "categories",
+         "id": "category-1",
+         "attributes": {
+            "name": "Guitars",
+            "slug": "guitars",
+            "createdAt": "2023-02-15T08:30:00Z",
+            "updatedAt": "2023-08-10T14:20:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-1" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-2",
+         "attributes": {
+            "name": "Recording Equipment",
+            "slug": "Recording Equipment",
+            "createdAt": "2023-03-01T09:45:00Z",
+            "updatedAt": "2023-09-12T11:10:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-2" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-3",
+         "attributes": {
+            "name": "Microphones",
+            "slug": "Microphones",
+            "createdAt": "2023-04-07T12:00:00Z",
+            "updatedAt": "2023-10-05T16:05:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-3" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-4",
+         "attributes": {
+            "name": "Traditional Instruments",
+            "slug": "Traditional Instruments",
+            "createdAt": "2023-05-11T07:25:00Z",
+            "updatedAt": "2023-11-01T10:00:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-4" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-5",
+         "attributes": {
+            "name": "Drums and Percussion",
+            "slug": "Drums and Percussion",
+            "createdAt": "2023-06-20T13:10:00Z",
+            "updatedAt": "2023-12-15T09:40:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-5" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-6",
+         "attributes": {
+            "name": "Software",
+            "slug": "Software",
+            "createdAt": "2023-07-18T11:55:00Z",
+            "updatedAt": "2024-01-08T14:30:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-6" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-7",
+         "attributes": {
+            "name": "DJ Equipment",
+            "slug": "DJ Equipment",
+            "createdAt": "2023-08-25T09:00:00Z",
+            "updatedAt": "2024-02-20T12:15:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-7" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-8",
+         "attributes": {
+            "name": "Accessories",
+            "slug": "Accessories",
+            "createdAt": "2023-09-30T14:45:00Z",
+            "updatedAt": "2024-03-18T08:50:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-8" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-9",
+         "attributes": {
+            "name": "Keys",
+            "slug": "Keys",
+            "createdAt": "2023-10-22T10:20:00Z",
+            "updatedAt": "2024-04-12T15:25:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-9" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-10",
+         "attributes": {
+            "name": "PA Equipments",
+            "slug": "PA Equipments",
+            "createdAt": "2023-11-15T16:30:00Z",
+            "updatedAt": "2024-05-05T11:05:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-10" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-11",
+         "attributes": {
+            "name": "Wind Instruments",
+            "slug": "Wind Instruments",
+            "createdAt": "2023-11-15T16:30:00Z",
+            "updatedAt": "2024-05-05T11:05:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-11" }
+            }
+         }
+      },
+      {
+         "type": "categories",
+         "id": "category-12",
+         "attributes": {
+            "name": "Cases and Racks",
+            "slug": "Cases and Racks",
+            "createdAt": "2023-11-15T16:30:00Z",
+            "updatedAt": "2024-05-05T11:05:00Z"
+         },
+         "relationships": {
+            "thumbnail": {
+               "data": { "type": "image", "id": "img-cat-12" }
+            }
+         }
+      }
+   ],
+   "included": [
+      {
+         "type": "image",
+         "id": "img-cat-1",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/gi.jpg",
+            "alt": "Guitars",
+            "createdAt": "2023-02-15T08:00:00Z",
+            "updatedAt": "2023-08-10T14:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-2",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/st.jpg",
+            "alt": "Recording Equipment",
+            "createdAt": "2023-03-01T09:30:00Z",
+            "updatedAt": "2023-09-12T11:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-3",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/mi.jpg",
+            "alt": "Microphones",
+            "createdAt": "2023-04-07T11:45:00Z",
+            "updatedAt": "2023-10-05T16:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-4",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/tr.jpg",
+            "alt": "Traditional Instruments",
+            "createdAt": "2023-05-11T07:00:00Z",
+            "updatedAt": "2023-11-01T09:50:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-5",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/dr.jpg",
+            "alt": "Drums and Percussion",
+            "createdAt": "2023-06-20T12:50:00Z",
+            "updatedAt": "2023-12-15T09:30:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-6",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/sw.jpg",
+            "alt": "Software",
+            "createdAt": "2023-07-18T11:30:00Z",
+            "updatedAt": "2024-01-08T14:15:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-7",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/dj.jpg",
+            "alt": "DJ Equipment",
+            "createdAt": "2023-08-25T08:40:00Z",
+            "updatedAt": "2024-02-20T12:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-8",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/zu.jpg",
+            "alt": "Accessories",
+            "createdAt": "2023-09-30T14:20:00Z",
+            "updatedAt": "2024-03-18T08:30:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-9",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/ta.jpg",
+            "alt": "Keys",
+            "createdAt": "2023-10-22T10:00:00Z",
+            "updatedAt": "2024-04-12T15:10:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-10",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/pa.jpg",
+            "alt": "PA Equipment",
+            "createdAt": "2023-11-15T16:10:00Z",
+            "updatedAt": "2024-05-05T11:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-11",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/bl.jpg",
+            "alt": "Wind Instruments",
+            "createdAt": "2023-11-15T16:10:00Z",
+            "updatedAt": "2024-05-05T11:00:00Z"
+         }
+      },
+      {
+         "type": "image",
+         "id": "img-cat-12",
+         "attributes": {
+            "url": "https://thumbs.static-thomann.de/thumb/thumb150x150/pics/images/category/icons/main/ca.jpg",
+            "alt": "Cases and Racks",
+            "createdAt": "2023-11-15T16:10:00Z",
+            "updatedAt": "2024-05-05T11:00:00Z"
+         }
+      }
+   ]
+}

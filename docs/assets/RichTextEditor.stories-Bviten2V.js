@@ -1,0 +1,6 @@
+import{n as e}from"./chunk-zsgVPwQN.js";import{a as t,i as n}from"./inputs-CdfX2BfX.js";var r,i,a,o,s;e((()=>{t(),r={component:n,title:`Components/Inputs/RichTextEditor`,tags:[`autodocs`],argTypes:{value:{readyOnly:{control:`boolean`},placeholder:{control:`text`}}}},i={type:`doc`,content:[{type:`heading`,attrs:{level:1},content:[{type:`text`,text:`Welcome to Tiptap`}]},{type:`paragraph`,content:[{type:`text`,text:`Tiptap is a headless rich text editor built on top of ProseMirror.`}]},{type:`bulletList`,content:[{type:`listItem`,content:[{type:`paragraph`,content:[{type:`text`,text:`Fast and customizable`}]}]},{type:`listItem`,content:[{type:`paragraph`,content:[{type:`text`,text:`Works great with React`}]}]}]},{type:`blockquote`,content:[{type:`paragraph`,content:[{type:`text`,text:`This is a blockquote example.`}]}]},{type:`codeBlock`,attrs:{language:`js`},content:[{type:`text`,text:`console.log('Hello Tiptap')`}]}]},a={},o={args:{value:i,readOnly:!0}},a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{}`,...a.parameters?.docs?.source}}},o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
+  args: {
+    value: mockContent,
+    readOnly: true
+  }
+}`,...o.parameters?.docs?.source}}},s=[`Default`,`ReadOnly`]}))();export{a as Default,o as ReadOnly,s as __namedExportsOrder,r as default};
